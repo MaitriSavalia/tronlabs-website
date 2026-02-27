@@ -17,6 +17,7 @@ export default function GlobeVisual() {
     let angle = 0;
     let animId: number;
     let running = true;
+    const c = ctx; // non-null reference for use inside draw()
 
     // Fewer points
     const points: { lat: number; lng: number; active: boolean }[] = [];
@@ -48,37 +49,37 @@ export default function GlobeVisual() {
     function draw() {
       if (!running) return;
       frame++;
-      ctx.clearRect(0, 0, 400, 400);
+      c.clearRect(0, 0, 400, 400);
 
       // Fewer meridians and parallels
       for (let lng = 0; lng < Math.PI * 2; lng += Math.PI / 4) {
-        ctx.beginPath();
+        c.beginPath();
         let started = false;
         for (let lat = -Math.PI / 2; lat <= Math.PI / 2; lat += 0.08) {
           const p = project(lat, lng, angle);
           if (p.z > 0) {
-            if (!started) { ctx.moveTo(p.x, p.y); started = true; }
-            else ctx.lineTo(p.x, p.y);
+            if (!started) { c.moveTo(p.x, p.y); started = true; }
+            else c.lineTo(p.x, p.y);
           } else { started = false; }
         }
-        ctx.strokeStyle = "rgba(0,245,255,0.07)";
-        ctx.lineWidth = 0.5;
-        ctx.stroke();
+        c.strokeStyle = "rgba(0,245,255,0.07)";
+        c.lineWidth = 0.5;
+        c.stroke();
       }
 
       for (let lat = -Math.PI / 2; lat <= Math.PI / 2; lat += Math.PI / 4) {
-        ctx.beginPath();
+        c.beginPath();
         let started = false;
         for (let lng2 = 0; lng2 <= Math.PI * 2; lng2 += 0.08) {
           const p = project(lat, lng2, angle);
           if (p.z > 0) {
-            if (!started) { ctx.moveTo(p.x, p.y); started = true; }
-            else ctx.lineTo(p.x, p.y);
+            if (!started) { c.moveTo(p.x, p.y); started = true; }
+            else c.lineTo(p.x, p.y);
           } else { started = false; }
         }
-        ctx.strokeStyle = "rgba(0,245,255,0.07)";
-        ctx.lineWidth = 0.5;
-        ctx.stroke();
+        c.strokeStyle = "rgba(0,245,255,0.07)";
+        c.lineWidth = 0.5;
+        c.stroke();
       }
 
       // Connections — every other frame
@@ -87,12 +88,12 @@ export default function GlobeVisual() {
           const pa = project(points[a].lat, points[a].lng, angle);
           const pb = project(points[b].lat, points[b].lng, angle);
           if (pa.z > 0 && pb.z > 0) {
-            ctx.beginPath();
-            ctx.moveTo(pa.x, pa.y);
-            ctx.lineTo(pb.x, pb.y);
-            ctx.strokeStyle = "rgba(0,200,255,0.12)";
-            ctx.lineWidth = 0.5;
-            ctx.stroke();
+            c.beginPath();
+            c.moveTo(pa.x, pa.y);
+            c.lineTo(pb.x, pb.y);
+            c.strokeStyle = "rgba(0,200,255,0.12)";
+            c.lineWidth = 0.5;
+            c.stroke();
           }
         });
       }
@@ -101,12 +102,12 @@ export default function GlobeVisual() {
       points.forEach((pt) => {
         const p = project(pt.lat, pt.lng, angle);
         if (p.z > 0.1) {
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, pt.active ? 2.5 : 1, 0, Math.PI * 2);
-          ctx.fillStyle = pt.active
+          c.beginPath();
+          c.arc(p.x, p.y, pt.active ? 2.5 : 1, 0, Math.PI * 2);
+          c.fillStyle = pt.active
             ? `rgba(0,245,255,${0.5 + p.z * 0.5})`
             : `rgba(0,150,200,${0.15 + p.z * 0.2})`;
-          ctx.fill();
+          c.fill();
         }
       });
 
