@@ -6,7 +6,7 @@ const solutions = [
     icon: "◎",
     title: "Egocentric Video Capture",
     subtitle: "First-Person Perspective at Scale",
-    desc: "We capture high-fidelity, first-person video data from real-world environments — homes, factories, labs, and beyond. This egocentric perspective is essential for training embodied AI systems that must understand the world from a human or robot point of view.",
+    desc: "We capture high-fidelity, first-person video data from real-world environments such as homes, factories, labs, and beyond. This egocentric perspective is essential for training embodied AI systems that must understand the world from a human or robot point of view.",
     specs: ["4K/60fps capture", "360° field of view", "Multi-camera rigs", "Long-duration sessions"],
   },
   {
@@ -27,14 +27,14 @@ const solutions = [
     icon: "⊞",
     title: "Structured Task Annotations",
     subtitle: "Semantic Intelligence at Scale",
-    desc: "Raw data is noise. Our expert annotation teams apply hierarchical task-level labeling — from atomic actions to long-horizon goals — creating datasets with the semantic richness required for genuine machine understanding.",
+    desc: "Raw data is noise. Our expert annotation teams apply hierarchical task-level labeling, from atomic actions to long-horizon goals, creating datasets with the semantic richness required for genuine machine understanding.",
     specs: ["Hierarchical labels", "Long-horizon tasks", "Action segmentation", "Intent annotation"],
   },
   {
     icon: "◈",
     title: "Petabyte-Scale Pipelines",
     subtitle: "Infrastructure Built for Frontier AI",
-    desc: "Data collection is worthless without the infrastructure to process and deliver it. Our distributed pipelines handle petabyte-scale ingestion, processing, and quality control — built on battle-tested cloud architecture.",
+    desc: "Data collection is worthless without the infrastructure to process and deliver it. Our distributed pipelines handle petabyte-scale ingestion, processing, and quality control that is built on battle-tested cloud architecture.",
     specs: ["Petabyte-scale storage", "Distributed processing", "Automated QA pipelines", "Real-time monitoring"],
   },
   {

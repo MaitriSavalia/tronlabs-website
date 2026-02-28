@@ -81,7 +81,7 @@ export default function ContactPage() {
               <span className="text-tron-cyan glow-text">Together</span>
             </h1>
             <p className="text-tron-text text-xl max-w-2xl leading-relaxed">
-              Whether you&apos;re a researcher, partner, investor, or potential team member — we
+              Whether you&apos;re a researcher, partner, investor, or potential team member, we
               want to hear from you. The physical AI moment is near.
             </p>
           </AnimatedSection>
@@ -214,10 +214,10 @@ export default function ContactPage() {
                     <h3 className="font-display font-bold text-white text-lg mb-2">Priyank</h3>
                     <div className="terminal-text text-xs mb-3">CO-FOUNDER & CEO</div>
                     <a
-                      href="mailto:priyank@mytronlabs.com"
+                      href="mailto:founders@mytronlabs.com"
                       className="text-tron-cyan text-sm hover:underline block mb-1"
                     >
-                      priyank@mytronlabs.com
+                      founders@mytronlabs.com
                     </a>
                     <a
                       href="https://mytronlabs.com"

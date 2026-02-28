@@ -66,7 +66,7 @@ export default function PartnersPage() {
               Build With Us
             </h1>
             <p className="text-tron-text text-xl max-w-2xl leading-relaxed">
-              We are actively looking for early partners — researchers, builders, and investors
+              We are actively looking for early partners like researchers, builders, and investors
               who believe the physical AI revolution is near.
             </p>
           </AnimatedSection>
@@ -124,7 +124,7 @@ export default function PartnersPage() {
                 We Are Just Getting Started
               </h2>
               <p className="text-tron-text text-lg leading-relaxed max-w-2xl mx-auto">
-                Tron Labs is in its early stages — which means right now is the best time to
+                Tron Labs is in its early stages, which means right now is the best time to
                 get involved. Early partners shape the direction of the platform, get priority
                 access to datasets, and build a relationship with the team from the ground up.
               </p>
@@ -152,7 +152,7 @@ export default function PartnersPage() {
               <span className="text-tron-cyan glow-text">Early Partner</span>
             </h2>
             <p className="text-tron-text text-lg mb-10">
-              If you are working on Physical AI, robotics, or embodied intelligence — reach out.
+              If you are working on Physical AI, robotics, or embodied intelligence, reach out.
               We want to hear what you are building.
             </p>
             <Link

@@ -4,7 +4,8 @@ export default function Footer() {
   return (
     <footer className="border-t border-tron-cyan/10 bg-[#020204] py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
+
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
@@ -17,69 +18,52 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-tron-text text-sm leading-relaxed max-w-xs">
-              Building the data backbone for Physical AI. The ChatGPT moment for robotics is near.
+              Building the data backbone for Physical AI.
             </p>
-            <div className="mt-6 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="terminal-text text-xs">SYSTEMS OPERATIONAL</span>
-            </div>
           </div>
 
-          {/* Links */}
-          <div>
+          {/* Navigation */}
+          <div className="md:col-span-2">
             <h4 className="font-display text-xs tracking-widest uppercase text-tron-cyan mb-4">
               Navigation
             </h4>
-            <ul className="space-y-3">
-              {[
-                ["Home", "/"],
-                ["About", "/about"],
-                ["Solution", "/solution"],
-                ["Partners", "/partners"],
-                ["Careers", "/careers"],
-                ["Contact", "/contact"],
-              ].map(([label, href]) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-tron-text text-sm hover:text-tron-cyan transition-colors duration-200"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="flex gap-16">
+              <ul className="space-y-3">
+                <li><Link href="/" className="text-tron-text text-sm hover:text-tron-cyan transition-colors duration-200">Home</Link></li>
+                <li><Link href="/about" className="text-tron-text text-sm hover:text-tron-cyan transition-colors duration-200">About</Link></li>
+                <li><Link href="/solution" className="text-tron-text text-sm hover:text-tron-cyan transition-colors duration-200">Solution</Link></li>
+              </ul>
+              <ul className="space-y-3">
+                <li><Link href="/partners" className="text-tron-text text-sm hover:text-tron-cyan transition-colors duration-200">Partners</Link></li>
+                <li><Link href="/careers" className="text-tron-text text-sm hover:text-tron-cyan transition-colors duration-200">Careers</Link></li>
+                <li><Link href="/contact" className="text-tron-text text-sm hover:text-tron-cyan transition-colors duration-200">Contact</Link></li>
+              </ul>
+            </div>
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="md:col-span-1">
             <h4 className="font-display text-xs tracking-widest uppercase text-tron-cyan mb-4">
               Contact
             </h4>
             <ul className="space-y-3 text-tron-text text-sm">
               <li>
-                <a
-                  href="mailto:priyank@mytronlabs.com"
-                  className="hover:text-tron-cyan transition-colors duration-200"
-                >
-                  priyank@mytronlabs.com
+                <a href="mailto:founders@mytronlabs.com" className="hover:text-tron-cyan transition-colors duration-200">
+                  founders@mytronlabs.com
                 </a>
               </li>
               <li>
-                <a
-                  href="https://mytronlabs.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-tron-cyan transition-colors duration-200"
-                >
+                <a href="https://mytronlabs.com" target="_blank" rel="noopener noreferrer" className="hover:text-tron-cyan transition-colors duration-200">
                   mytronlabs.com
                 </a>
               </li>
             </ul>
             <div className="mt-6">
-              <div className="terminal-text text-xs text-tron-cyan/40">SOCIAL LINKS COMING SOON</div>
+              <h4 className="font-display text-xs tracking-widest uppercase text-tron-cyan mb-3">Social Links</h4>
+              <a href="https://www.linkedin.com/company/my-tron-labs" target="_blank" rel="noopener noreferrer" className="text-tron-text text-sm hover:text-tron-cyan transition-colors duration-200">LinkedIn</a>
             </div>
           </div>
+
         </div>
 
         {/* Bottom */}
@@ -92,6 +76,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }

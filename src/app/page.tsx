@@ -77,7 +77,7 @@ export default function HomePage() {
             <br />
             <span className="text-tron-cyan glow-text">for Robotics</span>
             <br />
-            is Near.
+            is Here.
           </h1>
 
           {/* Typewriter */}
@@ -90,7 +90,7 @@ export default function HomePage() {
 
           {/* Subtitle */}
           <p className="text-tron-text text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
-            We are building the data backbone for Physical AI — large-scale, structured,
+            We are building the data backbone for Physical AI that is large-scale, structured,
             real-world egocentric datasets that will power the next generation of intelligent
             machines.
           </p>
@@ -101,7 +101,7 @@ export default function HomePage() {
               href="/contact"
               className="btn-solid px-8 py-4 font-display text-sm tracking-widest uppercase"
             >
-              Reach Out to Founders
+              Reach Out to Us
             </Link>
             <Link
               href="/solution"
@@ -122,8 +122,8 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { icon: "◎", label: "Egocentric Data", desc: "First-person video, audio & sensor capture at scale" },
-                { icon: "⟡", label: "Physical AI", desc: "Powering embodied intelligence and real-world robotics" },
-                { icon: "⊞", label: "Research-Grade", desc: "Structured annotations built for frontier AI teams" },
+                { icon: "⟡", label: "Multimodel Datasets", desc: "Synchronized video, audio, depth & sensor data in one unified pipeline" },
+                { icon: "⊞", label: "Highest Grade annotation", desc: "Structured annotations built for frontier AI teams" },
               ].map((item, i) => (
                 <AnimatedSection key={i} delay={i * 100}>
                   <div className="text-center group">
@@ -300,7 +300,7 @@ export default function HomePage() {
               href="/contact"
               className="btn-solid inline-block px-12 py-5 font-display text-base tracking-widest uppercase"
             >
-              Reach Out to Founders
+              Reach Out to Us
             </Link>
           </div>
         </AnimatedSection>

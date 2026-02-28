@@ -22,7 +22,7 @@ export default function CareersPage() {
             </h1>
             <p className="text-tron-text text-xl max-w-2xl leading-relaxed">
               We are a small, ambitious team on a mission to build the data infrastructure for
-              the next intelligence revolution. If that excites you — we want to hear from you.
+              the next intelligence revolution. If that excites you, we want to hear from you.
             </p>
           </AnimatedSection>
         </div>
@@ -54,12 +54,12 @@ export default function CareersPage() {
               {
                 icon: "⊞",
                 title: "Equity & Ownership",
-                desc: "Early team members receive meaningful equity. We are building something that could matter enormously — and you will own a piece of it.",
+                desc: "Early team members receive meaningful equity. We are building something that could matter enormously and you will own a piece of it.",
               },
               {
                 icon: "⌖",
                 title: "High Impact",
-                desc: "Every person on the team has direct impact. No layers, no bureaucracy — just meaningful work on hard problems.",
+                desc: "Every person on the team has direct impact. No layers, no bureaucracy, just meaningful work on hard problems.",
               },
               {
                 icon: "◎",
@@ -98,7 +98,7 @@ export default function CareersPage() {
                 We Are Building the Team
               </h2>
               <p className="text-tron-text text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-                We don&apos;t have formal job listings yet — but we are always interested in
+                We don&apos;t have formal job listings yet, but we are always interested in
                 exceptional people. If you are passionate about Physical AI, robotics data, or
                 embodied intelligence, tell us about yourself. The right person creates their
                 own opportunity here.

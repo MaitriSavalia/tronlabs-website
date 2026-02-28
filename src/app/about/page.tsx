@@ -2,15 +2,15 @@ import AnimatedSection from "@/components/AnimatedSection";
 import GlobeVisual from "@/components/GlobeVisual";
 import Link from "next/link";
 
-const team = [
-  {
-    name: "Priyank",
-    role: "Co-Founder",
-    bio: "Reach out directly to connect with the founding team.",
-    contact: "priyank@mytronlabs.com",
-    initials: "P",
-  },
-];
+// const team = [
+//   {
+//     name: "Priyank",
+//     role: "Co-Founder",
+//     bio: "Reach out directly to connect with the founding team.",
+//     contact: "priyank@mytronlabs.com",
+//     initials: "P",
+//   },
+// ];
 
 export default function AboutPage() {
   return (
@@ -51,13 +51,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-tron-text leading-relaxed">
                 <p>
-                  The most transformative AI breakthroughs of the past decade — from GPT-4 to
-                  Claude — were made possible by one thing: massive, high-quality training data.
-                  But all of that data was from the digital world.
+                  The most transformative AI breakthroughs of the past decade, from GPT-4 to
+                  Claude, were made possible by one thing: massive, high-quality training data.
+                  But all of that data came from the digital world.
                 </p>
                 <p>
-                  The physical world — where robots work, where humans operate, where autonomous
-                  systems need to function — has no equivalent data infrastructure. That&apos;s the
+                  The physical world is where robots work, where humans operate, where autonomous
+                  systems need to function. It has no equivalent data infrastructure. That&apos;s the
                   gap we&apos;re here to close.
                 </p>
                 <p>
@@ -112,7 +112,7 @@ export default function AboutPage() {
               {
                 icon: "◈",
                 title: "Security by Design",
-                desc: "Secure storage, encrypted delivery, and compliant data infrastructure — privacy and protection are non-negotiable.",
+                desc: "Secure storage, encrypted delivery, and compliant data infrastructure privacy and protection are non-negotiable.",
               },
               {
                 icon: "⟴",
@@ -133,7 +133,7 @@ export default function AboutPage() {
       </section>
 
       {/* ─── TEAM ─── */}
-      <section className="py-24 px-6 hex-pattern">
+      {/* <section className="py-24 px-6 hex-pattern">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection>
             <div className="text-center mb-16">
@@ -171,7 +171,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ─── CTA ─── */}
       <section className="py-24 px-6">
@@ -181,12 +181,12 @@ export default function AboutPage() {
               Want to Work With Us?
             </h2>
             <p className="text-tron-text mb-8">
-              Whether you&apos;re a researcher, investor, or enterprise partner — we want to hear
-              from you.
+              Whether you&apos;re a researcher, investor, or enterprise partner, WE WANT TO HEAR FROM YOU.
+              
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-solid px-8 py-4 font-display text-sm tracking-widest uppercase">
-                Contact Founders
+                Contact Us
               </Link>
               <Link href="/careers" className="btn-primary px-8 py-4 font-display text-sm tracking-widest uppercase">
                 Join the Team →
