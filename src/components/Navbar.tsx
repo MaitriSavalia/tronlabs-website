@@ -40,10 +40,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group" prefetch={true}>
-          <div className="relative w-8 h-8">
-            <div className="absolute inset-0 border border-tron-cyan/60 rotate-45 group-hover:rotate-90 transition-transform duration-500" />
-            <div className="absolute inset-1.5 bg-tron-cyan/20 rotate-45 group-hover:bg-tron-cyan/40 transition-colors duration-300" />
-          </div>
+          <img src="/logo-glow.png" alt="Tron Labs" className="w-8 h-8 object-contain" />
           <span className="font-display font-bold text-xl tracking-widest text-white group-hover:text-tron-cyan transition-colors duration-300">
             TRON<span className="text-tron-cyan">_</span>LABS
           </span>

@@ -9,10 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="relative w-7 h-7">
-                <div className="absolute inset-0 border border-tron-cyan/60 rotate-45" />
-                <div className="absolute inset-1.5 bg-tron-cyan/20 rotate-45" />
-              </div>
+              <img src="/logo-glow.png" alt="Tron Labs" className="w-7 h-7 object-contain" />
               <span className="font-display font-bold text-lg tracking-widest text-white">
                 TRON<span className="text-tron-cyan">_</span>LABS
               </span>
